@@ -35,22 +35,22 @@ class _MyHomePageState extends State<MyHomePage> {
           bottom: TabBar(
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Colors.greenAccent), //Change background color from here
+                color: Color(0xff525553)), //Change background color from here
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
+              Tab(icon: Icon(Icons.security)),
+              Tab(icon: Icon(Icons.security_update_warning)),
+              Tab(icon: Icon(Icons.security_update_good)),
               Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.access_alarm)),
             ],
           ),
-          title: Text('Tabs Demo'),
+          title: Text('Tabs Perales Oscar'),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
+            Icon(Icons.security, size: 350),
+            Icon(Icons.security_update_warning, size: 350),
+            Icon(Icons.security_update_good, size: 350),
             Icon(Icons.directions_car, size: 350),
-            Icon(Icons.access_alarm, size: 350),
           ],
         ),
       ),
